@@ -1,7 +1,11 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
+
+sidebar-menu:
+  - title: "Links"
+    children:
+      - title: "Posts"
+        url: /posts/
+      - title: "Tags"
+        url: /tags/

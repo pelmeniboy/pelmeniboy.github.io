@@ -2,10 +2,10 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$link-color: pink;
-$primary-color: pink;
+$sans-serif: "Montserrat";
+$primary-color: white;
 
-.masthead { background-color: gray; }
+.masthead { background-color: #1a1d24; }
 
 @charset "utf-8";
 
@@ -13,3 +13,4 @@ $primary-color: pink;
 @import "minimal-mistakes"; // main partials
 
 .greedy-nav { background: transparent }
+.sidebar { float: right }

@@ -5,7 +5,7 @@ tags:
 
 Sometimes when building a workflow you'll run into a situation where one of the steps in your workflow takes much longer than it should (or at least longer than you wish it would). If you are lucky the problematic task is ["embarassingly parallelizable"](https://en.wikipedia.org/wiki/Embarrassingly_parallel) and you can easily accelerate the analysis by splitting the work performed by a single task over many tasks that run in parallel.
 
-![serial vs parallel processing](/assets/images/serial_vs_parallel.png)
+![serial vs parallel processing]({{site.baseurl}}/assets/images/serial_vs_parallel.png)
 
 One place this scatter/gather strategy can come up in bioinformatics is when pre-processing on a large number of reads. For example, detecting rare events such as CRISPR off-target editing or translocations can require sequencing tens of millions of reads. To manage PCR duplicates library preparation strategies add UMIs to the DNA library. [UMI-tools](https://github.com/CGATOxford/UMI-tools) is a popular tool for working with UMIs, but as of the time of writing this, it only supports single-thread processing. When processing millions of reads with a single thread UMI assignment becomes the most time consuming step in most workflows.
 
@@ -119,7 +119,7 @@ fastq_pieces = SplitFastq.out.pieces.flatMap {
 
 For a single set of inputs a Nextflow process will emit a single output. The _flatMap()_ operation converts the output of the SplitFastq task from a Channel containing a list of FASTQs into a Channel containing the individual FASTQs pieces. The _collect()_ operator is used to ensure the `sample_id` associated with a FASTQ file is propagated to each of the split FASTQ pieces. For those who are more visually inclined the transformation is illustrated below:
 
-![flatMap illustration](/assets/images/nextflow_flatMap.png)
+![flatMap illustration]({{site.baseurl}}/assets/images/nextflow_flatMap.png)
 
 ## Maintaining flow
 

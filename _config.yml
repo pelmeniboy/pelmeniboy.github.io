@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "fun bake house"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Sol Shenker"
+name                     : "Pelmeni Boy"
 description              : "Computers, biology, and beyond"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,11 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Sol Shenker"
+  name             : "Pelmeni Boy"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : "Boston"
-  email            : "sol.shenker@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
